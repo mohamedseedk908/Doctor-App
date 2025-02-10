@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_complete_project/features/login/logic/cubit/login_cubit.dart';
+import 'package:flutter_complete_project/features/login/ui/widgets/dont_have_account_text.dart';
 import 'package:flutter_complete_project/features/login/ui/widgets/terms_and_conditions.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/helpers/spacing.dart';
@@ -54,6 +55,7 @@ class LoginScreen extends StatelessWidget {
                     verticalSpace(16),
                     const TermsAndConditionsText(),
                     verticalSpace(60),
+                    const DontHaveAccountText(),
                     const LoginBlocListener(),
                   ],
                 ),
